@@ -1,0 +1,127 @@
+{
+    "uid": "055f9daf-bd6d-4ff3-84be-b9bcfdcf5b75",
+    "name": "4_Default_Xgboost",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "feature_2"
+            ],
+            "scale_y": {
+                "scale": [
+                    0.3217408155290565
+                ],
+                "mean": [
+                    0.9504961666813727
+                ],
+                "var": [
+                    0.10351715237730234
+                ],
+                "n_samples_seen": 1191,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    -1.7228695103636529
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "feature_2": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "85ca84c1-5e1e-40b5-bde6-abaa1a04aa12",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "objective": "reg:squarederror",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 4,
+                "eval_metric": "rmse",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 73
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "feature_2": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "/content/drive/MyDrive/Colab Notebooks/Internship/SpecInt/mljar/648.exchange2_s/X.data",
+            "y_path": "/content/drive/MyDrive/Colab Notebooks/Internship/SpecInt/mljar/648.exchange2_s/y.data",
+            "results_path": "/content/drive/MyDrive/Colab Notebooks/Internship/SpecInt/mljar/648.exchange2_s"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "objective": "reg:squarederror",
+            "eta": 0.075,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 4,
+            "eval_metric": "rmse",
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "4_Default_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "4_Default_Xgboost/learner_fold_0.xgboost"
+    ],
+    "predictions_fname": "4_Default_Xgboost/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 0.2775082420834083,
+    "train_time": 8.372037410736084,
+    "is_stacked": false
+}

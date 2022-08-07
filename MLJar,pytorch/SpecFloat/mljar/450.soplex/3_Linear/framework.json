@@ -1,0 +1,111 @@
+{
+    "uid": "c3a1adab-5a0f-4fb5-8e0b-b837f487af12",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "feature_2"
+            ],
+            "scale_y": {
+                "scale": [
+                    0.4122325733339262
+                ],
+                "mean": [
+                    0.6584401114548177
+                ],
+                "var": [
+                    0.16993569451751087
+                ],
+                "n_samples_seen": 1008,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    -1.1108978487765198
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "feature_2": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Linear Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "a8c288c6-8b49-4dcd-a5f9-25bca45bb708",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "feature_2": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "/content/drive/MyDrive/Colab Notebooks/Internship/SpecFloat/mljar/450.soplex/X.data",
+            "y_path": "/content/drive/MyDrive/Colab Notebooks/Internship/SpecFloat/mljar/450.soplex/y.data",
+            "results_path": "/content/drive/MyDrive/Colab Notebooks/Internship/SpecFloat/mljar/450.soplex"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear/learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 0.2665849154967038,
+    "train_time": 6.265780925750732,
+    "is_stacked": false
+}

@@ -1,0 +1,16 @@
+if (feature_4 > -1.955) and (feature_14 > -1.117) and (feature_6 > -0.64) then response: -0.379 | based on 865 samples
+
+if (feature_4 > -1.955) and (feature_14 > -1.117) and (feature_6 <= -0.64) then response: 0.07 | based on 228 samples
+
+if (feature_4 <= -1.955) and (feature_1 > 0.068) and (feature_5 > -0.817) then response: 2.975 | based on 68 samples
+
+if (feature_4 > -1.955) and (feature_14 <= -1.117) and (feature_5 <= -0.731) then response: 2.109 | based on 14 samples
+
+if (feature_4 > -1.955) and (feature_14 <= -1.117) and (feature_5 > -0.731) then response: 2.142 | based on 8 samples
+
+if (feature_4 <= -1.955) and (feature_1 > 0.068) and (feature_5 <= -0.817) then response: 4.01 | based on 6 samples
+
+if (feature_4 <= -1.955) and (feature_1 <= 0.068) and (feature_5 > 4.256) then response: 10.961 | based on 1 samples
+
+if (feature_4 <= -1.955) and (feature_1 <= 0.068) and (feature_5 <= 4.256) then response: 8.655 | based on 1 samples
+
